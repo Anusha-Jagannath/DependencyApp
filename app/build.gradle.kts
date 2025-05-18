@@ -56,4 +56,6 @@ dependencies {
     implementation(libs.retrofit.converter.gson)
     implementation(libs.androidx.paging.runtime.ktx)
     implementation(libs.glide)
+    androidTestImplementation(libs.room.testing)
+    androidTestImplementation(libs.truth)
 }
