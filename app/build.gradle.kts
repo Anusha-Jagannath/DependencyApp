@@ -58,4 +58,10 @@ dependencies {
     implementation(libs.glide)
     androidTestImplementation(libs.room.testing)
     androidTestImplementation(libs.truth)
+
+    implementation(libs.compose.ui)
+    implementation(libs.compose.ui.tooling.preview)
+    implementation(libs.activity.compose)
+    implementation(libs.material3)
+    debugImplementation(libs.compose.ui.tooling)
 }

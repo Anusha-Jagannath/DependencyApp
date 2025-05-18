@@ -28,6 +28,11 @@ glide = "4.16.0"
 #room testing
 truth = "1.1.3"
 
+#compose ui
+compose = "1.6.0"
+activity-compose = "1.8.0"
+material3 = "1.2.0"
+
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -49,8 +54,15 @@ retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = 
 retrofit-converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
 androidx-paging-runtime-ktx = { group = "androidx.paging", name = "paging-runtime-ktx", version.ref = "paging" }
 glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+
 room-testing = { module = "androidx.room:room-testing", version.ref = "room" }
 truth = { module = "com.google.truth:truth", version.ref = "truth" }
+
+compose-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "compose" }
+compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview", version.ref = "compose" }
+activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity-compose" }
+material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "material3" }
+compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "compose" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
