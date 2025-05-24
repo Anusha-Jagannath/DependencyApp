@@ -33,6 +33,17 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+
+    buildFeatures {
+        viewBinding = true
+        compose = true
+    }
+
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.6.0" // Use latest stable version
+    }
+
 }
 
 dependencies {
