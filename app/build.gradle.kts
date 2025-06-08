@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("kotlin-kapt") // ✅ Add this line
 }
 
 android {
@@ -75,4 +76,5 @@ dependencies {
     implementation(libs.activity.compose)
     implementation(libs.material3)
     debugImplementation(libs.compose.ui.tooling)
+    kapt("androidx.room:room-compiler:2.7.1")
 }
