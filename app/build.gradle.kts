@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     id("kotlin-kapt") // ✅ Add this line
+
+    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
@@ -77,4 +79,6 @@ dependencies {
     implementation(libs.material3)
     debugImplementation(libs.compose.ui.tooling)
     kapt("androidx.room:room-compiler:2.7.1")
+    implementation(libs.navigation.compose)
+    implementation(libs.kotlinx.serialization.json)
 }
